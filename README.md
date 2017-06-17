@@ -41,12 +41,12 @@ Now you are connected via SSH as 'grader'.
 sudo nano /etc/ssh/sshd_config
 ```
 <br>
-Change default SSH port 22 to 2200 and change 
+Change default SSH port 22 to 2200 and change
+<br>
 ```
 PermitRootLogin
 ``` 
 to 
 ```
 PermitRootLogin no
-```
-.
+```.
