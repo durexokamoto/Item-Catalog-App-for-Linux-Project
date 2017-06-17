@@ -42,11 +42,21 @@ sudo nano /etc/ssh/sshd_config
 ```
 Change default SSH port 22 to 2200 and change ```PermitRootLogin``` to ```PermitRootLogin no```.
 <br>
-9. Run ```service ssh restart``` to restart SSH and make it effective.
-10. Run ```sudo dpkg-reconfigure tzdata``` and set timezone to UTC.
+9. Run ```service ssh restart``` to restart SSH and make it effective.<br>
+10. Run ```sudo dpkg-reconfigure tzdata``` and set timezone to UTC.<br>
 11. Update apps
 ```
 sudo apt-get update
 sudo apt-get upgrade
 sudo reboot
+```
+<br>
+12.
+```
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw limit 2200/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 123/udp
+sudo ufw enable
 ```
