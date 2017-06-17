@@ -40,7 +40,6 @@ Now you are connected via SSH as 'grader'.
 ```
 sudo nano /etc/ssh/sshd_config
 ```
-<br>
 Change default SSH port 22 to 2200 and change 'PermitRootLogin' to 'PermitRootLogin no'.
 9. Run ```service ssh restart``` to restart SSH and make it effective.
 10. Run ```sudo dpkg-reconfigure tzdata``` and set timezone to UTC.
