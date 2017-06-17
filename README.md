@@ -95,3 +95,35 @@ Make sure the code is using PostgreSQL.<br>
 sudo nano client_secrets.json
 ```
 Make sure client_secrets.json has the correct config.<br>
+19. Import the 'app' object as 'application'.
+```
+sudo nano application.wsgi
+```
+20. Allow www-data to write to /var/ww/app/vagrant/img directory.
+```
+sudo chown -R www-data:www-data img
+```
+21. Remove olf apache config
+```
+sudo rm /etc/apache2/sites-enabled/000-default.conf
+sudo nano /etc/apache2/sites-available/catalog.conf
+```
+and create a new one as following
+```
+# Set server name.
+ServerName ec2-x-x-x-x.us-west-2.compute.amazonaws.com
+
+# Ensure the app has access to necessary modules.
+WSGIPythonPath /var/www/app/vagrant
+
+<VirtualHost *:80>
+    # Point to the application's main Python script.
+    WSGIScriptAlias / /var/www/app/vagrant/application.wsgi
+
+    # Host the images.
+    Alias /img/ /var/www/app/vagrant/img/
+
+    # Host Flask's static directory.
+    Alias /static/ /var/www/app/vagrant/static/
+</VirtualHost>
+```
