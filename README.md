@@ -31,7 +31,15 @@ cp /root/.ssh/authorized_keys /home/grader/.ssh/
 chown grader:grader /home/grader/.ssh/authorized_keys
 chmod 644 /home/grader/.ssh/authorized_keys
 ``` 
-copy ssh key for 'grader'
+Copy ssh key for 'grader'
 <br>
 7. Logout and ```ssh -i ~/.ssh/privateKey grader@34.210.70.238```
 Now you are connected via SSH as 'grader'.
+<br>
+8.
+```
+sudo nano /etc/ssh/sshd_config
+```
+<br>
+Change default SSH port 22 to 2200 and change 
+```PermitRootLogin``` to ```PermitRootLogin no```.
