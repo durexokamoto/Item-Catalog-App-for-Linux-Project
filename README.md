@@ -49,8 +49,7 @@ Change default SSH port 22 to 2200 and change ```PermitRootLogin``` to ```Permit
 sudo apt-get update
 sudo apt-get upgrade
 sudo reboot
-``` and reboot
-<br>
+``` and reboot.<br>
 12. Run 
 ```
 sudo ufw default deny incoming
