@@ -45,8 +45,5 @@ Change default SSH port 22 to 2200 and change
 <br>
 ```
 PermitRootLogin
-``` 
-to 
-```
 PermitRootLogin no
 ```.
