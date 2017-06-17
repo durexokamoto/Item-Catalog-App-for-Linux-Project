@@ -3,6 +3,7 @@
 I take a baseline installation of a Linux server, prepare it to host my web applications, secure my server from a number of attack vectors, install and configure a database server, and deploy one of my existing web applications onto it.
 
 It is now can be access
+<br>
 http://34.210.70.238/
 <br>
 http://ec2-34-210-70-238.us-west-2.compute.amazonaws.com/
@@ -10,8 +11,7 @@ http://ec2-34-210-70-238.us-west-2.compute.amazonaws.com/
 
 
 ### How-to
-Make sure you cloned this repository under ```vagrant``` and load data ```newsdata.sql``` to ```news```.
-Run your Terminal and ```cd ``` to where your ```vagrant``` files locates.
+1. Create the key pair locally using ```ssh-keygen```
 
 ```sh
 $ vagrant ssh
