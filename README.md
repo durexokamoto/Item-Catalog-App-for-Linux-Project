@@ -127,3 +127,11 @@ WSGIPythonPath /var/www/app/vagrant
     Alias /static/ /var/www/app/vagrant/static/
 </VirtualHost>
 ```
+22. Add the app to Apache2
+```
+sudo ln -s /etc/apache2/sites-available/catalog.conf /etc/apache2/sites-enabled
+```
+23. Restart Apache2 and then... enjoy
+```
+sudo apache2ctl restart
+```
