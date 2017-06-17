@@ -70,3 +70,5 @@ sudo pip install psycopg2
 sudo pip install oauth2client requests httplib2
 sudo apt-get install git
 ```
+15. Use git to clone your repository to the vm
+```sudo git clone https://github.com/durexokamoto/Item-Catalog-App.git /var/www/app```
