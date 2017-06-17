@@ -20,20 +20,3 @@ http://ec2-34-210-70-238.us-west-2.compute.amazonaws.com/
 $usermod -aG sudo grader
 ```
 Create a user named grader and give him sudo access
-
-```sh
-$ vagrant ssh
-$ cd /vagrant
-$ cd Item-Catalog-App
-$ python database_setup.py
-$ python lotsofmenus.py
-$ python project.py
-```
-Open your prefered browser and vist the site via
-```
-http://localhost:5000/
-```
-or
-```
-http://0.0.0.0:5000/
-```
