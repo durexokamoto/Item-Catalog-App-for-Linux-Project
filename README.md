@@ -16,7 +16,8 @@ http://ec2-34-210-70-238.us-west-2.compute.amazonaws.com/
 3. run ```ssh -i ~/.ssh/privateKey ubuntu@34.210.70.238```You will be connected to the vm soon.
 4. ```sudo su - root``` switch to the root user
 5.
-```$useradd grader
+```
+$useradd grader
 $usermod -aG sudo grader
 ```
 Create a user named grader and give him sudo access
