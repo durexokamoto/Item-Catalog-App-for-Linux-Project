@@ -21,6 +21,7 @@ $useradd grader
 $usermod -aG sudo grader
 ```
 Create a user named grader and give him sudo access
+<br>
 6. 
 ```
 mkdir /home/grader/.ssh
@@ -29,6 +30,8 @@ chmod 700 /home/grader/.ssh
 cp /root/.ssh/authorized_keys /home/grader/.ssh/
 chown grader:grader /home/grader/.ssh/authorized_keys
 chmod 644 /home/grader/.ssh/authorized_keys
-``` copy ssh key for 'grader'
+``` 
+copy ssh key for 'grader'
+<br>
 7. Logout and ```ssh -i ~/.ssh/privateKey grader@34.210.70.238```
 Now you are connected via SSH as 'grader'.
