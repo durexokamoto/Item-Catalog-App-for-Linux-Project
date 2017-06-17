@@ -1,0 +1,675 @@
+/* General styles */
+body {
+    font: 16px/1.4 serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+/* Flash message */
+#flash {
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    background-color: #acacac;
+    padding: 0.5em 0;
+}
+
+
+/* Header */
+header {
+    width: 100%;
+    font-family: "Cinzel", serif;
+    border-bottom: 1px solid black;
+    padding-bottom: 1.5em;
+    margin: 0.4em 0 1.2em;
+}
+
+#signin-container {
+    height: 38px;
+    text-align: center;
+    font-family: sans-serif;
+    color: gray;
+    border-bottom: 1px solid lightgray;
+    padding-top: 0.1em;
+}
+
+#signout-button {
+    display: inline-block;
+    font-size: 0.8em;
+    padding-top: 0.5em;
+}
+
+#main-heading {
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.6em 0;
+}
+
+#heading-accent {
+    color: #8c8c8c;
+    font-weight: bold;
+}
+
+.music-notes {
+    font-size: 1.2em;
+}
+
+#sub-heading {
+    display: none;
+    font-family: "Reenie Beanie", cursive;
+    text-align: center;
+}
+
+
+/* Navigation */
+#hamburger {
+    width: 90%;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    border: 1px solid lightgray;
+    margin: 0 auto;
+}
+
+nav {
+    display: none;
+    width: 90%;
+    font-size: 1em;
+    margin: 0 auto;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0 1em;
+}
+
+.nav-link {
+    white-space: nowrap;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 0.3em;
+}
+
+.nav-link > a {
+    display: inline-block;
+    width: 100%;
+}
+
+
+/* Page title */
+.page-title {
+    width: 100%;
+    text-align: center;
+    color: #8c8c8c;;
+    font-size: 1em;
+    padding: 0 1.5em;
+    margin: -1em 0 0.9em;
+}
+
+
+/* Item tiles */
+#item-tile-container {
+    width: 100%;
+}
+
+.tile {
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1em;
+    margin-bottom: 1.5em;
+}
+
+.item-image {
+    max-height: 300px;
+    margin: 1em auto;
+}
+
+.item-info {
+    text-align: center;
+}
+
+.item-title {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.item-price {
+    font-size: 0.9em;
+}
+
+.item-description {
+    display: none;
+    text-align: justify;
+}
+
+.no-items {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+
+/* Item pages */
+#item-page-container {
+    width: 100%;
+    padding: 0 1.5em 1.5em;
+}
+
+.item-page-price {
+    width: 100%;
+    text-align: center;
+    border: solid lightgray;
+    border-width: 1px 0;
+    margin-bottom: 1em;
+}
+
+.item-page-description {
+    width: 100%;
+    text-align: justify;
+    padding-bottom: 2em;
+}
+
+.item-page-image-container {
+    width: 100%;
+}
+
+.item-page-image {
+    margin: 0 auto;
+}
+
+
+/* Button styles */
+.item-action-container {
+    width: 100%;
+    text-align: center;
+}
+
+.form-button-container {
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    box-sizing: content-box;
+    width: 6em;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    background-color: #ff7575;
+    border: 1px solid white;
+    padding: 0.3em;
+    margin: 0 auto 2em;
+}
+
+.button:hover {
+    border: 1px solid black;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 1em;
+    border-radius: 0;
+}
+
+
+/* Form styles */
+#form-container {
+    width: 100%;
+    background-color: #ecebeb;
+    padding: 1.5em 1.5em 0;
+    margin-bottom: 1.5em;
+}
+
+form {
+    width: 100%;
+    padding-top: 1em;
+}
+
+label {
+    display: block;
+    color: gray;
+    border-bottom: 1px solid darkgray;
+    margin-bottom: 1em;
+}
+
+input[type="text"],
+textarea {
+    -moz-box-sizing: border-box;
+    -webkit-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.prompt {
+    text-align: center;
+}
+
+#input-description,
+#input-name,
+#input-short-description {
+    width: 100%;
+}
+
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    font-size: 0.7em;
+    margin-bottom: 1em;
+}
+
+footer > a {
+    text-decoration: underline;
+}
+
+
+/* Breakpoint for small devices in landscape mode */
+@media screen and (min-width: 450px) {
+
+
+    /* Header */
+    header {
+        border-bottom: none;
+    }
+
+    #main-heading {
+        font-size: 1.8em;
+        font-weight: normal;
+        padding: 0;
+    }
+
+    #heading-accent {
+        font-weight: bold;
+    }
+
+    #sub-heading {
+        display: block;
+        font-size: 1.7em;
+        color: white;
+        background-color: #ff7575;
+        padding-bottom: 0.1em;
+    }
+
+
+    /* Navigation */
+    #hamburger {
+        margin: 0.6em auto 0;
+    }
+
+
+    /* Page title */
+    .page-title {
+        font-size: 1.3em;
+        font-weight: normal;
+        border-top: 1px solid #ff7575;
+        margin-top: -0.2em;
+    }
+
+
+    /* Item tiles */
+    .tile {
+        width: 44%;
+        border-bottom: 0;
+        padding-bottom: 0;
+        margin: 0 0 0 4%;
+    }
+
+    .item-image-container {
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        height: 200px;
+        margin-bottom: 0.2em;
+    }
+
+    .item-image {
+        position: relative;
+        max-width: 80%;
+        max-height: 170px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+
+    /* Item pages */
+    .item-page-container {
+        padding-bottom: 0;
+    }
+
+
+    /* Footer */
+    footer {
+        margin-top: 3em;
+    }
+}
+
+
+/* Breakpoint for tablets in portrait mode */
+@media screen and (min-width: 650px) {
+
+
+    /* Flash message */
+    #flash {
+        padding: 1em 0;
+    }
+
+
+    /* Header */
+    header {
+        padding-bottom: 0;
+    }
+
+    #signin-container {
+        text-align: right;
+    }
+
+    #google-button {
+        margin-right: 0.3em;
+    }
+
+    #signout-button {
+        margin-right: 0.5em;
+    }
+
+
+    /* Navigation */
+    #hamburger {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5em;
+        color: crimson;
+        background-color: cornsilk;
+        border: 1px solid lightgray;
+        padding-bottom: 0.3em;
+        margin-bottom: 1em;
+    }
+
+    .nav-list {
+        display: inline;
+        padding: 0;
+    }
+
+    .nav-link {
+        display: inline-block;
+        border: none;
+        padding: 0.1em 0.8em;
+        margin: 0.3em 0 0;
+    }
+
+    .nav-link:hover {
+        color: black;
+    }
+
+    .nav-link > a {
+        display: inline;
+    }
+
+    #user-nav {
+        color: darkgray;
+    }
+
+
+    /* Page title */
+    .page-title {
+        font-size: 1.9em;
+        margin-bottom: 0.3em;
+    }
+
+
+    /* Item tiles */
+    .tile {
+        margin-bottom: 1em;
+    }
+
+    .item-title {
+        font-size: 1.4em;
+        font-weight: normal;
+        border-bottom: 1px solid black;
+        padding-bottom: 0.3em;
+    }
+
+    .item-image-container {
+        height: 280px;
+    }
+
+    .item-image {
+        max-height: 250px;
+    }
+
+    .item-price {
+        font-size: 0.9em;
+    }
+
+    .item-description {
+        display: block;
+        margin-top: 1em;
+    }
+
+
+    /* Item pages */
+    .item-page-description {
+        font-size: 1.2em;
+    }
+
+
+    /* Form styles */
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .text-field {
+        font-size: 1.1em;
+    }
+
+
+    /* Footer */
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+
+/* Breakpoint for tablets in landscape mode */
+@media screen and (min-width: 1000px) {
+
+
+    /* Header */
+    #main-heading {
+        font-size: 2.3em;
+    }
+
+    #sub-heading {
+        font-size: 1.9em;
+    }
+
+
+    /* Item tiles */
+    .tile {
+        width: 28%;
+        margin-bottom: 2em;
+    }
+
+
+    /* Item pages */
+    .item-page-price {
+        margin-bottom: 2em;
+    }
+
+    .item-page-description {
+        width: 48%;
+        text-align: justify;
+        margin-right: 2%;
+    }
+
+    .item-page-image-container {
+        width: 50%;
+    }
+}
+
+
+/* Breakpoint for desktop screens */
+@media screen and (min-width: 1250px) {
+
+
+    /* Item tiles */
+    .item-title {
+        font-size: 1.6em;
+        padding-bottom: 0.3em;
+        margin-bottom: 0.2em;
+    }
+
+    .item-price {
+        font-size: 1em;
+    }
+
+    .item-description {
+        font-size: 1.2em;
+    }
+
+
+    /* Item pages */
+    .item-page-price {
+        font-size: 1.2em;
+    }
+
+    .item-page-description {
+        font-size: 1.4em;
+    }
+
+
+    /* Button styles */
+    .button,
+    input[type="submit"] {
+        font-size: 1.2em;
+    }
+
+
+    /* Form styles */
+    label {
+        font-size: 1.3em;
+        margin-top: 1em;
+    }
+}
+
+
+/* Breakpoint for large desktop screens */
+@media screen and (min-width: 1700px) {
+
+
+    /* Header */
+    #google-button {
+        margin-right: 0;
+    }
+
+    #main-heading {
+        font-size: 3em;
+        text-align: right;
+    }
+
+    #notes-two {
+        display: none;
+    }
+
+    #sub-heading {
+        font-size: 2.1em;
+        text-align: right;
+        padding-right: 0.2em;
+    }
+
+
+    /* Main container */
+    #main-container {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+
+    /* Page title */
+    .page-title {
+        text-align: left;
+        font-size: 1.8em;
+        line-height: 1em;
+        padding: 0;
+        margin-bottom: 1em;
+    }
+
+
+    /* Item tiles */
+    .tile {
+        width: 22%;
+    }
+
+    .tile:nth-child(4n+1) {
+        margin-left: 0;
+    }
+
+
+    /* Button styles */
+    .item-action-container {
+        text-align: right;
+        margin-top: -3.3em;
+    }
+
+    .form-button-container {
+        text-align: right;
+    }
+
+
+    /* Form styles */
+    .prompt {
+        text-align: left;
+    }
+
+
+    /* Footer */
+    footer {
+        font-size: 0.9em;
+    }
+}
