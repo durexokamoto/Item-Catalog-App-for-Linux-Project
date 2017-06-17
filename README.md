@@ -60,4 +60,13 @@ sudo ufw allow 123/udp
 sudo ufw enable
 ```
 to set firewall.<br>
-13. Logout and run ```ssh -i ~/.ssh/privateKey grader@34.210.70.238 -p 2200```You will be connected to the vm via 2200.
+13. Logout and run ```ssh -i ~/.ssh/privateKey grader@34.210.70.238 -p 2200```You will be connected to the vm via 2200.<br>
+14. Install required apps
+```
+sudo apt-get install apache2 libapache2-mod-wsgi postgresql
+sudo apt-get install python-flask python-sqlalchemy python-pip
+sudo apt-get install python-dev libpq-dev
+sudo pip install psycopg2
+sudo pip install oauth2client requests httplib2
+sudo apt-get install git
+```
