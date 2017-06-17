@@ -12,6 +12,14 @@ http://ec2-34-210-70-238.us-west-2.compute.amazonaws.com/
 
 ### How-to
 1. Create the key pair locally using ```ssh-keygen```
+2. Create an AWS lightsail instance with your existing public key.
+3. run ```ssh -i ~/.ssh/privateKey ubuntu@34.210.70.238```You will be connected to the vm soon.
+4. ```sudo su - root``` switch to the root user
+5.
+```$useradd grader
+$usermod -aG sudo grader
+```
+Create a user named grader and give him sudo access
 
 ```sh
 $ vagrant ssh
