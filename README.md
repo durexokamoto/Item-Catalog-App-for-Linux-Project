@@ -1,13 +1,11 @@
-# Item Catalog App
+# Instrument Catalog App
 
-It's an application that provides a list of items within a variety of categories as well as provide a user registration and authentication system. Registered users will have the ability to post, edit and delete their own items.
+I take a baseline installation of a Linux server, prepare it to host my web applications, secure my server from a number of attack vectors, install and configure a database server, and deploy one of my existing web applications onto it.
 
-### Prerequisites
+It is now can be access
+http://34.210.70.238/
+http://ec2-34-210-70-238.us-west-2.compute.amazonaws.com/
 
-  - VirtualBox
-  - Vagrant
-  - ubuntu-xenial
-  - Python
 
 
 ### How-to
