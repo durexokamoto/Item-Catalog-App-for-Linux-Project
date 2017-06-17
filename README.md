@@ -70,5 +70,24 @@ sudo pip install psycopg2
 sudo pip install oauth2client requests httplib2
 sudo apt-get install git
 ```
-15. Use git to clone your repository to the vm
-```sudo git clone https://github.com/durexokamoto/Item-Catalog-App.git /var/www/app```
+15. Run
+```
+sudo git clone https://github.com/durexokamoto/Item-Catalog-App.git /var/www/app
+```Use git to clone your repository to the vm
+16. Run
+```
+sudo -u postgres psql
+create user catalog with password 'catalog';
+create database catalog owner catalog;
+revoke all on database catalog from public;
+\q
+``` Create database for the app
+17. 
+```
+sudo nano /var/www/app/vagrant/seed.py
+sudo nano /var/www/app/vagrant/application.py
+```Make sure the code is using PostgreSQL.
+18. enter /var/www/app/vagrant
+```
+sudo nano client_secrets.json
+```Make sure client_secrets.json has the correct config.
