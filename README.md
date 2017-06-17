@@ -74,7 +74,7 @@ sudo apt-get install git
 ```
 sudo git clone https://github.com/durexokamoto/Item-Catalog-App.git /var/www/app
 ```
-Use git to clone your repository to the vm
+Use git to clone your repository to the vm.<br>
 16. Run
 ```
 sudo -u postgres psql
@@ -83,15 +83,15 @@ create database catalog owner catalog;
 revoke all on database catalog from public;
 \q
 ```
-Create database for the app
+Create database for the app.<br>
 17. 
 ```
 sudo nano /var/www/app/vagrant/seed.py
 sudo nano /var/www/app/vagrant/application.py
 ```
-Make sure the code is using PostgreSQL.
+Make sure the code is using PostgreSQL.<br>
 18. enter /var/www/app/vagrant
 ```
 sudo nano client_secrets.json
 ```
-Make sure client_secrets.json has the correct config.
+Make sure client_secrets.json has the correct config.<br>
