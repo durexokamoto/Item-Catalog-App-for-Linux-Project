@@ -59,4 +59,5 @@ sudo ufw allow 80/tcp
 sudo ufw allow 123/udp
 sudo ufw enable
 ```
-to set firewall.
+to set firewall.<br>
+13. Logout and run ```ssh -i ~/.ssh/privateKey grader@34.210.70.238 -p 2200```You will be connected to the vm via 2200.
